@@ -1,0 +1,99 @@
+{
+    "terminal.integrated.profiles.windows": {
+        // Other profiles that should probably be present for Reasons TM
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Visual Studio Developer Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "/k",
+                // Easier to go through vcvars64 than to hack PATH
+                "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\Build\\vcvars64.bat",
+                "&&",
+                // CMD _sucks_, drop into PS immediately
+                "powershell.exe"
+            ],
+            "icon": "terminal-powershell",
+        },
+    },
+    // User-level only... Just delete when you're done with the course.
+    "terminal.integrated.defaultProfile.windows": "Visual Studio Developer Prompt",
+    "files.associations": {
+        "forces.h": "c",
+        "list.h": "c",
+        "body.h": "c",
+        "math.h": "c",
+        "assert.h": "c",
+        "sdl_audio.h": "c",
+        "sdl_wrapper.h": "c",
+        "sdl.h": "c",
+        "sdl_mixer.h": "c",
+        "tower.h": "c",
+        "__node_handle": "c",
+        "color.h": "c",
+        "sdl2_gfxprimitives.h": "c",
+        "algorithm": "c",
+        "random": "c",
+        "__hash_table": "cpp",
+        "__split_buffer": "cpp",
+        "__tree": "cpp",
+        "array": "cpp",
+        "bitset": "cpp",
+        "deque": "cpp",
+        "initializer_list": "cpp",
+        "iterator": "cpp",
+        "map": "cpp",
+        "queue": "cpp",
+        "set": "cpp",
+        "stack": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "utility": "cpp",
+        "vector": "cpp",
+        "filesystem": "c",
+        "sdl_ttf.h": "c",
+        "stdlib.h": "c",
+        "type_traits": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "path.h": "c",
+        "image.h": "c",
+        "sound.h": "c"
+    },
+    "cSpell.ignoreWords": [
+        "afplay",
+        "camo",
+        "covid",
+        "covids",
+        "fscan",
+        "futura",
+        "grav",
+        "mousebuttonup",
+        "nbodies",
+        "sdl",
+        "sdl's",
+        "sdlk",
+        "strhscore",
+        "titillium",
+        "todos",
+        "unclicked",
+        "undisplay",
+        "undisplays",
+        "web"
+    ]
+}
